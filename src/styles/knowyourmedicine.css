@@ -1,0 +1,19 @@
+.know-your-medicine-block{
+    position: relative;
+  }
+   .know-your-medicine-block-image{
+    height: 600px;
+    width: 100% ;
+    border-radius: 100px;
+  } 
+  
+  .know-your-medicine-block-text{
+    position:absolute;
+    top: 120px;
+    right: 15%;
+    width: 600px;
+    margin-left: 600px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 70px;
+  }

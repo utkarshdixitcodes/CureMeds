@@ -1,0 +1,48 @@
+
+
+.small-components{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .small-component{
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 80px;
+    width: 280px;
+    height: 500px ;
+  }
+  
+  .small-component-image-pink{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 100%;
+    height: 350px;
+    background-color: lightpink;
+  }
+  
+  .small-component-image-blue{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 100%;
+    height: 350px;
+    background-color: lightblue;
+  }
+  
+  .header-text{
+    margin-top: 5px ;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  
+  .bottom-text{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 20px;
+  }

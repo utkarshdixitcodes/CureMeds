@@ -1,0 +1,54 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  
+  }
+  
+  .sideBar{
+    gap: 20px;
+    width: 50%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .sideBar-info{
+    align-items: center;
+    font-size:25px;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+    color:black;
+    max-height: 100px;
+    max-width: 200px;
+  }
+  
+  .sideBar-info:hover{
+    color: white;
+    background-color: black;
+  }
+  .hamburger{
+    margin: 0;
+    height: 50px;
+    display: none;
+    align-items: flex-end;
+  }
+  .logo-image{
+    height: 100px;
+    width: 400px;
+    border-radius: 30px;
+    margin: auto;
+  }
+  
+  @media (max-width  : 900px)  {
+      .hamburger{
+        display: inline-block;
+      } 
+  }
+  @media (min-width : 901px) {
+    .sideBar-info{
+      display: inline-block;
+    }
+  }

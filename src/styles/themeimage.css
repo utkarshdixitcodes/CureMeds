@@ -1,0 +1,24 @@
+.theme-image{ 
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(14, 6, 32), rgb(136, 148, 239));
+    height: 500px;
+  }
+  
+  .image-doctor{
+    height: 80%;
+     width: 60%;
+  }
+  
+  .tag-line{
+    display: inline-block;
+    font-family: "Verdana";
+    font-weight: 500;
+    width: 300px;
+    font-size: 28px;
+  }
+  

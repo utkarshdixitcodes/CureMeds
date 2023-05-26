@@ -1,0 +1,29 @@
+.search-field{
+    margin-top: 10px;
+    height: 50px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding:20px;
+    font-size: 20px;
+  }
+  .search-field::placeholder{
+    padding-left: 30px;
+    margin-left: 30px;
+  }
+  
+  
+  .search-button{
+    background-image: linear-gradient(to bottom right, rgb(36, 9, 94), rgb(136, 148, 239));
+    margin-left: 20px;
+    height: 50px;
+    width: 15%;
+    color: white;
+    border: none;
+    border-radius: 20px;;
+  }
+  .search-button:hover{
+    color: rgb(35, 35, 140);
+    background-color: lightblue;
+  }
+  
