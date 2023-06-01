@@ -17,3 +17,16 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 70px;
   }
+    .know-your-medicine-link{
+      height: 80px;
+      width: 350px;
+      text-decoration: wavy;
+      font-size: 30px;
+      position:absolute;
+      bottom: 80px;
+      right: 5%;
+      cursor: pointer;
+      font-size: bold;
+      /* color: white; */
+      border-radius: 20px;
+  }

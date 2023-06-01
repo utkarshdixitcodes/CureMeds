@@ -1,8 +1,13 @@
 .login-body{
-    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* width: 700px; */
+}
+.heading1{
+   margin: 0 auto;
 }
 header {
     position: fixed;
@@ -252,4 +257,10 @@ header {
 
 p{
     font-size: 1.5em;
+}
+
+.form-box-register{
+    width: 700px;
+    margin: 0 auto;
+    height: 400px;
 }

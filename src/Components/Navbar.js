@@ -1,12 +1,9 @@
 import React from "react";
-// import { Login } from "./Login";
 import { Link } from "react-router-dom";
 export  const Navbar =() => {
       return(
         <navbar className = "Navbar">
-        <div>
-       <Link to="/home"> <img className="logo-image" src = "./white-logo.jpeg" alt="image not found"></img></Link> 
-        </div>
+       <Link to="/"> <img className="logo-image" src = "./mainlogo.png " alt="image not found"></img></Link> 
         <div className="sideBar">
         <Link className="sideBar-info" to="/login">Login</Link>
         <Link className="sideBar-info" to ="/Registration" >Sign up</Link>

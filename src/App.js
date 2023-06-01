@@ -1,13 +1,6 @@
-import { BrowserRouter as router, Route,  Routes , Link } from "react-router-dom";
+import {  Route,  Routes , Link } from "react-router-dom";
 import './App.css' ; 
-import {Navbar} from './Components/Navbar'
 import React from "react";
-// import { ReactDOM } from "react";
-// import { useState } from "react";
-import {ThemeImage} from "./Components/ThemeImage"
-import {Search} from "./Components/Search"
-// import { SmallComponent } from './Components/SmallComponent';
-// import MedsData from './smallComponentData';
 import {Login} from "./Components/Login";
 import Home from "./Components/Home";
 import Registration from "./Components/Registration";
@@ -16,27 +9,15 @@ import Help from "./Components/Help";
 import LoggedUser from "./Components/LoggedUser";
 import Contacts from "./Components/Contacts";
 import MedicalStoresComponent from "./Components/MedicalStoresComponent";
+import DepressionContent from "./Components/DepressionContent";
+import DetailsMedicine from "./Components/DetailsMedicine";
 
 function App() {
-    // const components = MedsData.map(item => {
-    //  return <SmallComponent 
-    //   number = {item.number}
-    //   headerText = {item.header}
-    //   bottomText = {item.bottom}
-    //   imageAddress = {item.image}
-    //   />
-    // })
-    let [login , setLogin] = React.useState(false) 
-
-    const changeLog= () => console.log("kjdfdfnvjkebr")
   return (
     <router>
-    <div className="App">
-  
-     
+    <div className="App">    
      <Routes>
       <Route path="" element ={<Home />} ></Route>
-      <Route path="/home" element ={<Home />} ></Route>
       <Route path="/login"  element={<Login />} />
       <Route path="/registration"  element={<Registration />} />
       <Route path="/about" element = { <About /> } />
@@ -44,6 +25,9 @@ function App() {
       <Route path="/user" element = {<LoggedUser />} />
       <Route path="/contactus" element ={<Contacts />} />
       <Route path = "/medicalsnearyou"  element = { <MedicalStoresComponent /> } />
+      <Route path = "deprresiondetails" element = {<DepressionContent /> } />
+      <Route path = '/meddetails' element  = { <DetailsMedicine />} />
+      
      </Routes>
      </div>
       </router>

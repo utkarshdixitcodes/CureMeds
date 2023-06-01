@@ -25,21 +25,18 @@ const handleRegistration = async (event)  =>{
  }
 
   return (
-    <div className='login-body' >
+    <div  >
         <Navbar />  
-      {account && <div  className="form-box register">
-       <h2>Create new Account</h2>
+      {account && <div  className="form-box-register">
             <form onSubmit={handleRegistration}>
                 <div className="input-box">
                     <span className="icon"><ion-icon name="person"></ion-icon></span>
                     <input type="text" required name='username'  onChange={inputChanged} />
-
                     <label>Username</label>
                 </div>
                 <div className="input-box">
                     <span className="icon"> <ion-icon name="mail"></ion-icon></span>
                     <input type="email" required  name='usermail' onChange={inputChanged}/>
-
                     <label>Email</label>
                 </div>
                 <div className="input-box">
@@ -60,6 +57,4 @@ const handleRegistration = async (event)  =>{
     </div>
   )
 }
-
-
 export default  Registration

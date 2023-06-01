@@ -1,11 +1,14 @@
 import React from 'react'
 import { Navbar } from './Navbar'                           
 import Registration from './Registration'
-import { Link } from 'react-router-dom'
+import { Link  } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import { useState , useEffect } from 'react'
 
 export  const Login=()=> {
     var [user , setUser] = React.useState(true)
-    
+    const Navigate = useNavigate()
+
     const userChange =() =>{
         setUser(!user)
     }
@@ -23,15 +26,17 @@ export  const Login=()=> {
             headers : {
                 "Content-Type" : "application/json"
               }
+        }).then(response => response.json())
+        .then(data =>{
+            Navigate('/')
         })
+      
      }
-   
   return (
     <div>
         <Navbar />
     <div className='login-body'>
           {user &&   <div className="form-box login">
-                <h2>Login to your Account</h2>
             <form onSubmit={handleLogin}>
                 <div className="input-box">
                     <span className="icon"> <ion-icon name="mail"></ion-icon></span>
@@ -49,13 +54,16 @@ export  const Login=()=> {
                 </div>
                 <button type="submit" className="btn">login</button>
                 <div className="login-register">
-                    <p> Don't have an account?<Link to="/Registration" onClick={userChange} className="register-link"> Register</Link></p>
+                    <p> Don't have an account?<Link to="/Registration" 
+                    onClick={userChange} 
+                    className="register-link"> Register</Link></p>
                 </div>
             </form>
         </div>}
 
        {!user && <Link to ="/Registration"><Registration /></Link> }
     </div>
+    <h1></h1>
      </div>
   )
 }

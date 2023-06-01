@@ -3,9 +3,10 @@
 Body{
   font-family: 'Fasthand';
   font-family: 'Mukta', sans-serif;
-  /* height: 20000px; */
+  height: 2000px;
   max-width: 2000px;
   margin: 0 auto; 
+  scroll-behavior: smooth;
   /* background-color: grey; */
 }
 
@@ -19,3 +20,34 @@ Link{
   text-align: center;
 }
 
+
+.disease-details-block{
+  /* text-align: center; */
+  width: 800px;
+  margin: 0 auto;
+  
+}
+
+h1{
+  text-align: center;
+}
+h2{
+  margin-top: 30px;
+
+}
+
+li{
+  /* list-style-type:  none; */
+}
+
+.about-comp{
+  margin: 0 auto;
+  width: 1000px;
+/* text-align: center; */
+
+}
+.help-comp{
+margin-top: 100px;
+margin: 0 auto;
+width: 80%;
+}

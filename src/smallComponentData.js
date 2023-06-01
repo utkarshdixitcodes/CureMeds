@@ -27,13 +27,13 @@
       header : "Medical Stores near you",
       bottom : "Search for nearest Medical Store",
       image : "./medicalStore.png"
-} ,
-    {
-     number : "6",
-      header : "Medical Stores near you",
-      bottom: "Search for nearest Medical Store",
-      image : "./medicalStore.png"
-    }
+} 
+    // {
+    //  number : "6",
+    //   header : "Medical Stores near you",
+    //   bottom: "Search for nearest Medical Store",
+    //   image : "./medicalStore.png"
+    // }
     ]
 
 export default MedsData
